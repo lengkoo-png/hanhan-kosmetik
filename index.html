@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAN HAN KOSMETIK - Toko Kosmetik Original</title>
+    <style>
+        /* Desain Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f3f4f5; /* Abu-abu terang agar clean */
+            color: #333;
+        }
+
+        /* Header (Bagian Atas) */
+        header {
+            background-color: #03AC0E; /* Hijau khas Tokopedia */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+        .cart { cursor: pointer; font-weight: bold; }
+
+        /* Container Konten */
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        .section-title { margin-bottom: 20px; font-size: 20px; color: #333; }
+
+        /* Grid Produk */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Kartu Produk */
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #eaeaea;
+        }
+        .card h3 { font-size: 16px; margin: 12px 0 8px; font-weight: normal; line-height: 1.4; }
+        .card p { color: #FA591D; font-size: 18px; font-weight: bold; margin: 0 0 15px 0; }
+        
+        /* Tombol Beli */
+        .btn {
+            background-color: #03AC0E;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #03AC0E;
+        }
+        .btn:hover { background-color: #028C0B; }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HAN HAN KOSMETIK</h1>
+        <div class="cart">🛒 Keranjang (0)</div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Produk Pilihan</h2>
+        
+        <div class="products">
+            <!-- Produk 1 -->
+            <div class="card">
+                <!-- Ganti link gambar di bawah dengan foto produk asli Anda -->
+                <img src="https://via.placeholder.com/200x200?text=Foto+Kosmetik+1" alt="Kosmetik 1">
+                <h3>Serum Pencerah Wajah 20ml</h3>
+                <p>Rp 65.000</p>
+                <!-- Anda bisa memasukkan link WhatsApp di atribut href agar pembeli langsung chat -->
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Serum" target="_blank" class="btn">Beli via WA</a>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Foto+Kosmetik+2" alt="Kosmetik 2">
+                <h3>Lip Cream Matte Tahan Lama</h3>
+                <p>Rp 45.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Lip%20Cream" target="_blank" class="btn">Beli via WA</a>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Foto+Kosmetik+3" alt="Kosmetik 3">
+                <h3>Sunscreen SPF 50 PA+++</h3>
+                <p>Rp 55.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Sunscreen" target="_blank" class="btn">Beli via WA</a>
+            </div>
+            
+            <!-- Produk 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Foto+Kosmetik+4" alt="Kosmetik 4">
+                <h3>Toner Wajah Hydrating 100ml</h3>
+                <p>Rp 35.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20Toner" target="_blank" class="btn">Beli via WA</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 HAN HAN KOSMETIK. Pengiriman ke Seluruh Indonesia.
+    </footer>
+
+</body>
+</html>
